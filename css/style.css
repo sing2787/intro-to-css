@@ -1,0 +1,66 @@
+/* Select body */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  background-color: #7251B5;
+} /* Styles the whole page's body with font, spacing, and background color */
+
+/* Select h1, h2 and h3 */
+h1, h2, h3 {
+  margin-bottom: 0;
+} /* Removes bottom margin from all heading levels 1–3 */
+
+/* Select the id company-name */
+#company-name {
+  font-size: 1.5rem;
+} /* Increases font size of the element with id company-name */
+
+/* Select header and footer */
+header, footer {
+  background-color: #000;
+  color: #DEC9E9;
+} /* Applies black background and light text color to header and footer */
+
+/* Select the class wrapper */
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2em;
+} /* Sets max width and centers content, with padding, for wrapper class */
+
+/* Select both list types */
+ul, ol {
+  padding: 0;
+  list-style: none;
+} /* Removes padding and bullets/numbers from all lists */
+
+/* Descendant selector: links within navigation */
+nav a {
+  color: #DEC9E9;
+  text-decoration: none;
+} /* Styles nav links with light color and no underline */
+
+/* Adjacent selector: section immediately beside the section with id #intro */
+#intro + section {
+  background-color: #000;
+  color: #DEC9E9;
+} /* Targets the section right after #intro and gives it a dark theme */
+
+/* Child selector: img directly inside article */
+article > img {
+  width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin-top: 1em;
+} /* Styles team member images: small, round, grayscale, with top margin */
+
+/* Select every even numbered li within ordered list */
+ol li:nth-child(even) {
+  color: #dc33dc;
+} /* Colors every even-numbered item in the top 5 list in bright pink */
+
+/* Child selector: img directly inside main */
+main > img {
+  width: 100%;
+} /* Makes the top image inside main span full width */
